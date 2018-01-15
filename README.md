@@ -19,7 +19,9 @@ To check the same in web-browser, you can integrate the `wsClient.js` in a HTML 
 
 Based on  :   https://wiki.tcl-lang.org/49314
 
-Credits   :   Mr.Bezoar
+# Credits
+
+  Mr.Bezoar
 
 
 
