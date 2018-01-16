@@ -669,16 +669,16 @@ proc ::websocket::send { sock type {msg ""} {final 1}} {
     if { [string is integer $type] } {
 	set opcode $type
     } else {
-	switch -glob  -- $type {
-	    t* {
+	switch -regexp  -- $type {
+	    "^[tT].*" {
 		# text
 		set opcode 1
 	    }
-	    b* {
+	    "^[bB].*" {
 		# binary
 		set opcode 2
 	    }
-	    p* {
+	    "^[pP].*" {
 		# ping
 		set opcode 9
 	    }
@@ -1360,19 +1360,19 @@ proc ::websocket::open { url handler args } {
 	if { ! $allowed } {
 	    return -code error "$k is not a recognised option"
 	}
-	switch  -glob -- [string trimleft $k -] {
-	    he* {
+	switch  -regexp -- [string trimleft $k -] {
+	    "^[hH][eE].*" {
 		# Catch the headers, since we will be adding a few
 		# ones by hand.
 		array set HDR $v
 	    }
-	    prot* {
+	    ^[pP][rR][oO][tT].* {
 		# New option -protocol to support the list of
 		# application protocols that the client accepts.
 		# -protocol should be a list.
 		set protos $v
 	    }
-	    ti* {
+	    ^[tT][iI].* {
 		# We implement the timeout ourselves to be able to
 		# properly cleanup.
 		if { [string is integer $v] && $v > 0 } {
