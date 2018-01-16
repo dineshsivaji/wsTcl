@@ -24,11 +24,15 @@ To check the same in web-browser, you can integrate the `wsClient.js` in a HTML 
 
 # History
 
+It is a minimalized version of [tclhttpd-websocket](https://github.com/dineshsivaji/tclhttpd-websocket)
+
 Based on  :   https://wiki.tcl-lang.org/49314
 
 # Credits
 
   Mr.Bezoar
+  Mr.Jeff Smith
+  Mr.Donal Fellows
 
 
 
