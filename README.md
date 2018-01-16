@@ -1,5 +1,5 @@
 # wsTcl
-Pure - Standalone Tcl websocket Server-Client implementation without any additional web server.
+Pure - Standalone Tcl websocket Server-Client implementation without any additional web server like [tclhttpd](https://www.tcl.tk/software/tclhttpd/)
 
 This is intended for Tcl8.4, So I have altered the `websocket.tcl` file to make it backward compatible. 
 
@@ -17,6 +17,9 @@ To start the Tcl client
 
   `tclsh wsClient.tcl`
     
+It is a simple echo client-server model. Once the client connected to the server, whatever the client sends to server, will be echoed back to the client. 
+
+
 To check the same in web-browser, you can integrate the `wsClient.js` in a HTML file.
 
 # History
