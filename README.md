@@ -1,6 +1,10 @@
 # wsTcl
 Pure - Standalone Tcl websocket Server-Client implementation without any additional web server.
 
+This is intended for Tcl8.4, So I have altered the `websocket.tcl` file to make it backward compatible. 
+
+It can still run on higher versions. 
+
 # How to Run ? 
 To start the server, 
 
