@@ -30,11 +30,8 @@ Based on  :   https://wiki.tcl-lang.org/49314
 
 # Credits
 
-  Mr.Bezoar
+  [Mr.Bezoar](https://wiki.tcl-lang.org/18044)
   
-  Mr.Jeff Smith
+  [Mr.Jeff Smith](http://wiki.tcl.tk/6132)
   
-  Mr.Donal Fellows
-
-
-
+  [Mr.Donal Fellows](http://wiki.tcl.tk/73)
