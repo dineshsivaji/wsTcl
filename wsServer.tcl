@@ -121,7 +121,6 @@ proc readFromSock {sock} {
 
 ##### Main starts here #####
 set curDir [file dirname [file normalize [info script]]]
-lappend auto_path /repo/dsivaji/atc/cm8/auto/Automation/Library/TclLib-Linux/tcl8.4/lib/tcllib1.9
 lappend auto_path $curDir/lib
 package require websocket
 
